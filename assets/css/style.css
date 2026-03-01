@@ -16,7 +16,7 @@ body {
 /* COVER */
 .cover {
     height: 100vh;
-    background: url('/assets/bg/bg_1.jpeg') center center/cover no-repeat;
+    background: url('../bg/bg_1.jpeg') center center/cover no-repeat;
     position: relative;
 }
 

@@ -190,3 +190,12 @@
     color: rgb(0, 0, 0);
     font-size: 10px;
   }
+  .thumbnail{
+    height: 180px;
+  }
+  .thumb{
+    height: 100%;
+  }
+  .thumb_2{
+    height: 100%;
+  }
