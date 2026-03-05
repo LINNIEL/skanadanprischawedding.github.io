@@ -60,7 +60,56 @@
     height: auto;
 }
 .nama_m{
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
   font-size: 50px;
+}
+.n_lengkap{
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.dgn{
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+.kutipan{
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+.kutip{
+  font-family: "Birthstone", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+}
+.up{
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+.n_cover {
+  font-family: "Birthstone", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.815);
+}
+.wedd{
+  font-size: 22px;
+  font-family: "Birthstone", system-ui;
+  font-weight: 300;
+  font-style: normal;
 }
 .wrapper_2{
     background-color: #d6d6d640;
@@ -92,6 +141,8 @@
 }
 .btn{
     box-shadow: 2px 2px 4px black;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
 }
 .linniel_4{
     height: auto;
@@ -198,4 +249,9 @@
   }
   .thumb_2{
     height: 100%;
+  }
+  .j_peminangan{
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }

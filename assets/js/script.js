@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = [
         "assets/bg/bg_1.jpeg",
         "assets/bg/bg_2.jpeg",
-        "assets/bg/bg_3.jpg",
-        "assets/bg/bg_4.jpg",
-        "assets/bg/bg_5.jpg"
+        "assets/bg/bg_3.JPG",
+        "assets/bg/bg_4.JPG",
+        "assets/bg/bg_5.JPG"
         ];
 
     let current = 0;

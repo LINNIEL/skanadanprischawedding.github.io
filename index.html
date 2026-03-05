@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Undangan Digital</title>
+    <title>Skhana & Prischa</title>
+    <link rel="icon" type="image/png" href="assets/image/thumb.JPG">
+
+        <meta property="og:title" content="Undangan Pernikahan Skhana & Prischa" />
+        <meta property="og:description" content="Klik untuk membuka undangan..." />
+        <meta property="og:image" content="https://LINNIEL.github.io/skanadanprischawedding.github.io/assets/tumbnail/thumb.JPG" />
+        <meta property="og:url" content="https://LINNIEL.github.io/skanadanprischawedding/" />
+        <meta property="og:type" content="website" />
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Atma:wght@300;400;500;600;700&family=Birthstone&display=swap" rel="stylesheet">
+
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/undangan.css">
     <link rel="stylesheet" href="assets/css/countdown.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
 </head>
 <body>
+    <div id="loading">
+            <img src="assets/dec/loadingg.gif" alt="Loading..." class="loader">
+        </div>
 
 <div class="wrapper mx-auto">
 
     <!-- COVER -->
     <section id="cover" class="cover d-flex flex-column justify-content-between align-items-center text-center py-5">
         <div class="title">
-            <h1 class="text-white mb-3">The Wedding Of</h1>
-            <h2 class="text-white mb-4">Skhana & Prischa</h2>
+            <h1 class="wedd text-white text-start">The Wedding Of</h1>
+            <h2 class="n_cover text-white">Skhana & Prischa</h2>
         </div>
         <div class="nama_undangan mb-2">
             <p>Kepada Yth.</p>
             <p>Bapak / Ibu / Saudara / i <br> di tempat</p>
                 <br>
-            <p id="nama-tamu" class="nama tamu">Nama Tamu</p>
+            <p id="nama-tamu" class="nama_tamu">Nama Tamu</p>
             <p>
-            <button id="btnBuka" class="btn btn-light px-4">Buka Undangan</button>
+            <a>
+                <button id="btnBuka" class="btn btn-light px-4 posisi-btn">
+                    <img src="assets/dec/paper.png" alt="paper" class="paper">
+                        Buka Undangan
+                </button>
+            </a>
         </div>
     </section>
 
@@ -54,8 +76,9 @@
                     </div>
                     
                 <p class="kutipan text-center py-5 px-3" >
-                    "Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."
-                    <br><span class="kutip">( Matius 19:6)</span>
+                    "Aku Mengucap Syukur Kepada Allahku
+                    Setiap Kali Aku Mengingat Kamu"
+                    <br><span class="kutip">( FIlipi 1 : 3 - 4 )</span>
                 </p>
                 </div>
         </section>
@@ -82,14 +105,14 @@
                             </div>
                             <div class="nama mb-3 mt-4">
                                 
-                                    <p>Skhana Sanam, S.KM</p>
+                                    <p class="n_lengkap">Skhana Martinus Sanam, S.KM</p>
                                     <hr class="hr_custom">
                                     <p>Putra dari pasangan <br>Bpk. Simon Sanam dan Ibu. Yonsemia Kase </p>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <h1 class="text-center py-3">Dengan</h1>
+                    <h1 class="dgn text-center py-3 mb-5">&</h1>
                     <div class="grid-test justify-content-center align-items-center text-center d-flex">
                         <div class="wanita_bio">
                             <div class="parent justify-content-center align-items-center text-center d-flex px-3">
@@ -103,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="nama mb-3 mt-4">
-                                <p>Prischa M. D. Putri Ratu Kore, S.I.Kom</p>
+                                <p class="n_lengkap">Prischa M. D.P. Ratu Kore, S.I.Kom</p>
                                 <hr class="hr_custom">
                                 <p>Putri dari pasangan <br>Bpk. Markus Ratu Kore (Alm) dan Ibu. Derinje M.Wie </p>
                             </div>
@@ -117,39 +140,43 @@
                     <p class="text-light mt-5">Yang akan diSelenggarakan pada :</p>
                      
                     <div class="justify-content-center text-center wrapper_2">
-                   <p class="text-light fs-5 fw-bold">PEMINANGAN</p>
+                   <p class="up text-light fs-5 fw-bold">PEMINANGAN</p>
                             <div class="Pemberkatan text-light text-center mt-4">
+                                <P class="j_peminangan">Rabu, 18 Maret 2026</P>
                                 <p>Pukul 16 . 00 WITA - Selesai</p>
                                 <p>Rumah Bpk . Markus Ratu Kore (Alm)</p>
                                 <p class="lksi">Jln. Benteng, Kelurahan Airnona</p>
-                                <h2><a href="" class="btn btn-info" target="_blank" rel="noopener noreferrer">Lihat Lokasi</a></h2>
+                                <h2><a href="" class="btn" target="_blank" rel="noopener noreferrer">Lihat Lokasi</a></h2>
                             </div>
                         <hr class="hr_custom">
+                    <p class="up text-center fs-5 fw-bold">PEMBERKATAN & RESEPSI</p>
                         <img src="assets/dec/jadwal-2-2.png" alt="jadwal" class="jadwal_1">
-                            <div class="Pemberkatan text-light text-center mt-4">
+                    <div class="Pemberkatan text-light text-center mt-4">
                         <hr class="hr_custom">
                             <div class="Pemberkatan text-light text-center mt-4">
                                 <div class="grid-test justify-content-center align-items-center text-center d-flex">
                         <div class="jdwl ">
                             <div class="div6 text-center">
-                                <p class="text-center fs-5 fw-bold">PEMBERKATAN</p>
+                                <p class="up text-center fs-5 fw-bold">PEMBERKATAN</p>
                                 <hr class="hr_custom">
                                 <p>Jumat, 20 Maret 2026</p>
                                 <p>Pukul : 13 . 00 WITA</p>
                                 <p>Gereja GMIT Koinonia Kupang <br> Jln. Jendral Sudirman <br>Kelurahan Nunleu</p>
+                                <h2><a href="" class="btn" target="_blank" rel="noopener noreferrer">Lihat Lokasi</a></h2>
                                 <hr class="hr_custom">
                             </div>
                             <div class="div6">
-                                <p class="text-center fs-5 fw-bold">RESEPSI</p>
+                                <p class="up text-center fs-5 fw-bold">RESEPSI</p>
                                 <hr class="hr_custom">
                                 <p>Jumat, 20 Maret 2026</p>
                                 <p>Pukul : 18 . 00 WITA</p>
                                 <p>Grand Mutiara Ballroom, <br>Jln. Terusan Timor Raya <br>Kelurahan Pasir Panjang </p>
+                                <h2><a href="" class="btn" target="_blank" rel="noopener noreferrer">Lihat Lokasi</a></h2>
                             </div>
                         </div>
                         </div>
+                            </div>
                     </div>
-                            </div>
                             
                             
                     </div>
@@ -170,7 +197,7 @@
                     <p class="thanks text-light text-center py-5 px-4 mt-5">Merupakan suatu kehormatan bagi kami bila 
                         Bapak / Ibu / Saudara / I berkenan hadir untuk memberikan Doa dan Restu bagi ke dua anak kami</p>
                     <div class="inviting text-light" >
-                        <p class="text-center titl_2 mt-5 fs-5">Turut Mengundang</p>
+                        <p class="up text-center titl_2 mt-5 fs-5">Turut Mengundang</p>
                         <hr>
                         <div class="row px-4">
                             <div class="col-6 text-start">
@@ -184,6 +211,7 @@
                             <div class="col-6 text-start">
                                 <p>Kel. Besar Sanam - Kase </p>
                                 <p>Kel. Besar Uki - Sipa</p>
+                                <p>Kel. Besar L. S Rumlaklak</p>
                             </div>
                         </div>
                     </div>
@@ -192,7 +220,7 @@
             </section>
             <section id="linniel_5">
                 <div class="container py-5">
-                    <h4 class="titl_2 fs-1 text-center mb-4 text-light">Galeri Foto</h4>
+                    <h4 class="up titl_2 fs-1 text-center mb-4 text-light">Galeri Foto</h4>
 
                     <!-- Carousel Atas -->
                     <div id="galeriCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -219,7 +247,7 @@
                     <div class="gallery-grid mt-4">
                     <img src="assets/tumbnail/1-1.jpg" alt="Foto 4" class="thumbnail">
                     <img src="assets/tumbnail/3-3.jpg" alt="Foto 5" class="thumbnail">
-                    <img src="assets/tumbnail/3.jpg" alt="Foto 6" class="thumbnail thumb_2">
+                    <img src="assets/tumbnail/3.JPG" alt="Foto 6" class="thumbnail thumb_2">
                     <img src="assets/tumbnail/7.jpg" alt="Foto 7" class="thumbnail thumb_2">
                     <img src="assets/tumbnail/2-2.jpg" alt="Foto 8" class="thumbnail wide thumb">
                     </div>
@@ -246,30 +274,51 @@
 
 <!-- Audio -->
 <audio id="bgMusic" loop preload="auto">
-    <source src="assets/music/music.mp3" type="audio/mp3">
+    <source src="assets/music/musicc.mp3" type="audio/mp3">
 </audio>
 
 <script>
-    function getParameterByName(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-            }
+    
+document.addEventListener("DOMContentLoaded", function () {
 
+    const target = document.getElementById("nama-tamu");
 
-        const namaTamu = getParameterByName('untuk') || getParameterByName('kepada');
+    // ambil parameter URL
+    function getNamaTamu() {
+        const params = new URLSearchParams(window.location.search);
 
+        return params.get("untuk") || params.get("kepada") || params.get("to");
+    }
 
-            if (namaTamu) {
-                document.addEventListener('DOMContentLoaded', () => {
-                    document.getElementById('nama-tamu').textContent = namaTamu;
-                });
-                } else {
+    let namaTamu = getNamaTamu();
 
-            document.getElementById('nama-tamu').textContent = "nama tamu";
-        }
+    if (namaTamu) {
 
+        // ubah _ menjadi spasi
+        namaTamu = namaTamu.replace(/_/g, " ");
 
-        </script>
+        // decode jika ada %20 dll
+        namaTamu = decodeURIComponent(namaTamu);
+
+        // hapus karakter aneh (anti spam sederhana)
+        namaTamu = namaTamu.replace(/[<>]/g, "");
+
+        // kapital tiap kata
+        namaTamu = namaTamu.replace(/\b\w/g, function (huruf) {
+            return huruf.toUpperCase();
+        });
+
+        target.textContent = namaTamu;
+
+    } else {
+
+        target.textContent = "Bapak/Ibu/Saudara/i";
+
+    }
+
+});
+
+</script>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -278,6 +327,7 @@
 <script src="assets/js/script.js"></script>
 <script src="assets/js/countdown.js"></script>
 <script src="assets/js/lightbox.js"></script>
+<script src="assets/js/loader.js"></script>
 
 </body>
 </html>
