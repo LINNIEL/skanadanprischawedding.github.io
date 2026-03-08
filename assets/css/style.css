@@ -25,6 +25,13 @@ body {
     line-height:0.8;
 }
 
+.w-ring{
+    width: 90px;
+}
+.pkl{
+    font-size: 16px;
+}
+
 .posisi-btn{
     position: absolute;
     flex-direction: column;
@@ -61,7 +68,6 @@ body {
 .isi {
     position: relative;
     height: 100vh;
-    overflow: hidden;
 }
 
 /* Background */
@@ -112,5 +118,6 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
+
 
 
