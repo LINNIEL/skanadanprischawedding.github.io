@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generator Link Undangan</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+margin:0;
+}
+
+.container{
+width:100%;
+max-width:400px;
+background:white;
+padding:20px;
+box-sizing:border-box;
+min-height:100vh;
+}
+
+h3{
+text-align:center;
+}
+
+textarea{
+width:100%;
+height:150px;
+margin-bottom:15px;
+padding:10px;
+box-sizing:border-box;
+}
+
+button.generate{
+width:100%;
+padding:10px;
+margin-bottom:20px;
+background:#2c7be5;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+.link-item{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#f1f1f1;
+padding:8px;
+margin-bottom:8px;
+border-radius:5px;
+}
+
+.link-item input{
+border:none;
+background:transparent;
+width:75%;
+font-size:12px;
+}
+
+.copy-btn{
+background:#28a745;
+color:white;
+border:none;
+padding:5px 10px;
+border-radius:4px;
+font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h3>Generator Link Undangan</h3>
+
+<p>Masukkan daftar nama (1 nama per baris)</p>
+
+<textarea id="daftarNama" placeholder="Contoh:
+Erick Funome
+Riski Sanam
+Aldi Lassa"></textarea>
+
+<button class="generate" onclick="buatLink()">Generate Link</button>
+
+<div id="hasil"></div>
+
+</div>
+
+<script>
+
+function buatLink(){
+
+let daftar = document.getElementById("daftarNama").value.trim().split("\n");
+
+let hasil = "";
+
+daftar.forEach(function(nama){
+
+nama = nama.trim();
+
+if(nama !== ""){
+
+let urlNama = nama
+.toLowerCase()
+.replace(/\s+/g,"_");
+
+let link = "https://skhanaprischawedding.netlify.app/?to=" + urlNama;
+
+hasil += `
+<div class="link-item">
+<input type="text" value="${link}" readonly>
+<button class="copy-btn" onclick="copyLink(this)">Copy</button>
+</div>
+`;
+
+}
+
+});
+
+document.getElementById("hasil").innerHTML = hasil;
+
+}
+
+function copyLink(btn){
+
+let input = btn.parentElement.querySelector("input");
+
+input.select();
+input.setSelectionRange(0,99999);
+
+navigator.clipboard.writeText(input.value);
+
+btn.innerText = "Copied";
+
+setTimeout(function(){
+btn.innerText = "Copy";
+},1500);
+
+}
+
+</script>
+
+</body>
+</html>
