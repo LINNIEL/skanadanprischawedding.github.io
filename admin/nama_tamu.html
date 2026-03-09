@@ -46,28 +46,27 @@ border:none;
 border-radius:5px;
 }
 
-.link-item{
-display:flex;
-align-items:center;
-justify-content:space-between;
-background:#f1f1f1;
-padding:8px;
-margin-bottom:8px;
-border-radius:5px;
+.nama-label{
+font-weight:bold;
+margin-bottom:5px;
+color:#333;
 }
 
-.link-item input{
-border:none;
-background:transparent;
-width:75%;
-font-size:12px;
+.message-box{
+background:#f1f1f1;
+padding:10px;
+margin-bottom:15px;
+border-radius:6px;
+font-size:13px;
+white-space:pre-line;
 }
 
 .copy-btn{
+margin-top:8px;
 background:#28a745;
 color:white;
 border:none;
-padding:5px 10px;
+padding:6px 10px;
 border-radius:4px;
 font-size:12px;
 }
@@ -114,10 +113,33 @@ let urlNama = nama
 
 let link = "https://skhanaprischawedding.netlify.app/?to=" + urlNama;
 
+let pesan =
+`Assalamu’alaikum Warahmatullahi Wabarakatuh
+Shalom
+Om Swastiastu
+Namo Buddhaya
+Salam Kebajikan 🙏
+
+Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
+
+Untuk informasi lengkap mengenai waktu dan lokasi acara, silakan membuka undangan digital melalui link berikut:
+
+${link}
+
+Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+
+Yang Berbahagia  
+Skhana & Prischa`;
+
 hasil += `
-<div class="link-item">
-<input type="text" value="${link}" readonly>
-<button class="copy-btn" onclick="copyLink(this)">Copy</button>
+<div class="message-box">
+
+<div class="nama-label">Tamu: ${nama}</div>
+
+<div>${pesan}</div>
+
+<button class="copy-btn" onclick='copyPesan(${JSON.stringify(pesan)})'>Copy Pesan</button>
+
 </div>
 `;
 
@@ -129,20 +151,11 @@ document.getElementById("hasil").innerHTML = hasil;
 
 }
 
-function copyLink(btn){
+function copyPesan(text){
 
-let input = btn.parentElement.querySelector("input");
+navigator.clipboard.writeText(text);
 
-input.select();
-input.setSelectionRange(0,99999);
-
-navigator.clipboard.writeText(input.value);
-
-btn.innerText = "Copied";
-
-setTimeout(function(){
-btn.innerText = "Copy";
-},1500);
+alert("Pesan untuk tamu berhasil disalin");
 
 }
 
