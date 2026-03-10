@@ -258,3 +258,88 @@
 .linniel_7{
   height: auto;
 }
+.gift-wrapper {
+      background: rgba(0, 0, 0, 0);
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .gift-wrapper h2 {
+      font-family: "Great Vibes", cursive;
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .gift-wrapper p {
+      font-size: 14px;
+      color: #f8f8f8;
+      margin-bottom: 25px;
+    }
+
+    .bank-card {
+      background: linear-gradient(135deg, #0022ff 20%, #99d1fb);
+      color: #333;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+      position: relative;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .bank-card img {
+      height: 35px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .chip {
+      width: 45px;
+      height: 35px;
+      background: gold;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+
+    .rekening {
+      font-size: 17px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .btn-copy {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin-bottom: 8px;
+    }
+
+    .btn-copy:hover {
+      background-color: #9b5447;
+    }
+
+    .nama-rek {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn-konfirmasi {
+      background-color: #7a3e34;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 30px;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+
+    .btn-konfirmasi:hover {
+      background-color: #9b5447;
+    }

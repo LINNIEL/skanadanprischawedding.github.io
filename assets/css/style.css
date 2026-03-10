@@ -15,7 +15,7 @@ body {
 
 /* COVER */
 .cover {
-    height: 100vh;
+    height: 95vh;
     background: url('../bg/bg_1.jpeg') center center/cover no-repeat;
     position: relative;
 }
@@ -30,6 +30,11 @@ body {
 }
 .pkl{
     font-size: 16px;
+}
+
+.nama_tamu{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .posisi-btn{
