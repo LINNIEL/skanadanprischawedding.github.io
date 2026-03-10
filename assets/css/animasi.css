@@ -12,7 +12,7 @@ transform:translateY(0);
 .zoom-in{
 opacity:0;
 transform:scale(0.1);
-transition:all 1.2s cubic-bezier(0.22,1,0.36,1);
+transition:all 1.8s cubic-bezier(0.22,1,0.36,1);
 }
 
 .zoom-in.show{
@@ -23,9 +23,9 @@ transition:all 1.2s cubic-bezier(0.22,1,0.36,1);
 delay-1{
     transition-delay: 0.2s;
 }
-delay-1{
-    transition-delay: 0.6s;
+delay-2{
+    transition-delay: 1s;
 }
-delay-1{
-    transition-delay: 0.8s;
+delay-3{
+    transition-delay: 1.5s;
 }
