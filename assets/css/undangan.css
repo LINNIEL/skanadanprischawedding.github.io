@@ -343,3 +343,11 @@
     .btn-konfirmasi:hover {
       background-color: #9b5447;
     }
+    .icon{
+      width: 40px;
+      filter: drop-shadow( 2px 2px 2px rgb(255, 255, 255));
+    }
+    .thanks_img{
+      width: 280px;
+      filter: drop-shadow( 5px 2px 4px rgb(255, 255, 255));
+    }
